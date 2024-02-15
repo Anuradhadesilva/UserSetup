@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
-
+import Lottie
 struct ProfileView: View {
     @StateObject var viewmodel = ProfileViewModel()
-    @StateObject var imageModel = ImageArtViewModel()
+//    @StateObject var imageModel = ImageArtViewModel()
     
     //    @State private var MyProjectSelect = true
     //    @State private var PublishedArtSelect = false
@@ -81,6 +81,7 @@ struct ProfileView: View {
                             }
                             .onTapGesture(){
                                 selectedTab = .PublishedArtSelect
+                                
                                 //                            PublishedArtSelect.toggle()
                                 //                            MyProjectSelect = false
                             }
@@ -96,46 +97,10 @@ struct ProfileView: View {
                     VStack
                     {
                         if selectedTab == .MyProjectSelect{
-                            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-                                ForEach(imageModel.ImageArray, id: \.self){ imageName in
-                                    Image(imageName)
-                                        .resizable()
-                                        .frame(width: 180)
-                                        .overlay(
-                                            HStack(){
-                                                Text("Image")
-                                                    .padding()
-                                                    .font(Font.custom(CustomFonts.OpenSansMedium, size: 11))
-                                                Spacer()
-                                                Image("Moreicon")
-                                                
-                                                    .padding()
-                                            }
-                                                .padding(.top,120)
-                                        )
-                                }
-                            }
+                            ProjectListView(imageModel: ImageArtViewModel())
                             .padding(.horizontal,12)
                         } else if selectedTab == .PublishedArtSelect{
-                            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-                                ForEach(imageModel.ImageArray2, id: \.self){ imageName in
-                                    Image(imageName)
-                                        .resizable()
-                                        .frame(width: 180)
-                                        .overlay(
-                                            HStack(){
-                                                Text("Image")
-                                                    .padding()
-                                                    .font(Font.custom(CustomFonts.OpenSansMedium, size: 11))
-                                                Spacer()
-                                                Image("Moreicon")
-                                                
-                                                    .padding()
-                                            }
-                                                .padding(.top,120)
-                                        )
-                                }
-                            }
+                           PublishedList(imageModel: ImageArtViewModel())
                             .padding(.horizontal,12)
                         }
                     }
@@ -146,6 +111,7 @@ struct ProfileView: View {
                         }
                         ToolbarItem(placement: .principal){
                             Text("Profile")
+                            
                         }
                         ToolbarItem(placement: .topBarTrailing){
                             Image("Settings_44")
@@ -179,26 +145,6 @@ struct ProfileView: View {
                         .background(Color(red: 166 / 255, green: 69 / 255, blue: 255 / 255))
                         .cornerRadius(8)
                         Spacer()
-//                        Text(user.name)
-//                            .font(Font.custom(CustomFonts.OpenSansBold, size: 17))
-//                            .foregroundColor(.white)
-//                        Button(action:{
-//
-//                        }){
-//                            NavigationLink(
-//                                destination: SignUpView()){
-//                                    Image("Email icon")
-//                                    Text("Sign up with email")
-//                                        .font(.title3.bold())
-//                                        .foregroundColor(Color.white)
-//                                }
-//                            Text("Sign In")
-//                                .font(Font.custom(CustomFonts.OpenSansBold, size: 17))
-//                        }
-//                        .frame(width: 215, height: 48)
-//                        .background(Color(red: 166 / 255, green: 69 / 255, blue: 255 / 255))
-//                        .foregroundColor(.white)
-//                        .cornerRadius(8)
                         
                     }
                     .frame(width: 370, height: 200)
@@ -291,57 +237,6 @@ struct ProfileView: View {
                             .frame(width:400,height:450)
                         }
                     }
-                   
-                       
-                    
-                    
-                    
-//                    VStack
-//                    {
-//                        if selectedTab == .MyProjectSelect{
-//                            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-//                                ForEach(imageModel.ImageArray, id: \.self){ imageName in
-//                                    Image(imageName)
-//                                        .resizable()
-//                                        .frame(width: 180)
-//                                        .overlay(
-//                                            HStack(){
-//                                                Text("Image")
-//                                                    .padding()
-//                                                    .font(Font.custom(CustomFonts.OpenSansMedium, size: 11))
-//                                                Spacer()
-//                                                Image("Moreicon")
-//
-//                                                    .padding()
-//                                            }
-//                                                .padding(.top,120)
-//                                        )
-//                                }
-//                            }
-//                            .padding(.horizontal,12)
-//                        } else if selectedTab == .PublishedArtSelect{
-//                            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-//                                ForEach(imageModel.ImageArray2, id: \.self){ imageName in
-//                                    Image(imageName)
-//                                        .resizable()
-//                                        .frame(width: 180)
-//                                        .overlay(
-//                                            HStack(){
-//                                                Text("Image")
-//                                                    .padding()
-//                                                    .font(Font.custom(CustomFonts.OpenSansMedium, size: 11))
-//                                                Spacer()
-//                                                Image("Moreicon")
-//
-//                                                    .padding()
-//                                            }
-//                                                .padding(.top,120)
-//                                        )
-//                                }
-//                            }
-//                            .padding(.horizontal,12)
-//                        }
-//                    }
                     
                     .toolbar(){
                         ToolbarItem(placement: .topBarLeading){

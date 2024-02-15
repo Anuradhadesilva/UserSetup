@@ -29,13 +29,13 @@ struct MainView: View {
                             Text("Anytime,Anywhere.")
                                 .font(.title.bold())
                         }
-                        .padding(.bottom,40)
+                        .padding(.bottom,30)
                         HStack{
                             Text("Already have an account?")
                             NavigationLink(destination: SignInView()){
                                 Text("Sign In")
                                     .underline()
-                                
+                                    
                             }
                             .toolbar{
                                 ToolbarItem(placement: .topBarTrailing){
@@ -48,6 +48,7 @@ struct MainView: View {
                                 }
                             }
                         }
+                        .padding(.bottom,14)
                         .padding()
                         VStack(spacing: 20) {
                             Button(action: {
