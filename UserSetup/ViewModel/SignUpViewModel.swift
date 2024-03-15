@@ -35,7 +35,8 @@ class SignUpViewModel: ObservableObject{
         let newUser = User(
             id: id,
             name: name,
-            email: email
+            email: email, 
+            profileImageURL: nil
         )
         let db = Firestore.firestore()
         db.collection("users")
@@ -47,7 +48,7 @@ class SignUpViewModel: ObservableObject{
     private func Validate() -> Bool{
         guard !name.trimmingCharacters(in: .whitespaces).isEmpty,
               !email.trimmingCharacters(in: .whitespaces).isEmpty,
-              !email.trimmingCharacters(in: .whitespaces).isEmpty else{
+              !password.trimmingCharacters(in: .whitespaces).isEmpty else{
             return false
         }
         guard email.contains("@") && email.contains(".") else{

@@ -12,6 +12,7 @@ class SignInViewModel:ObservableObject{
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage =  ""
+    @Published var validEmail = false
     init(email: String = "", password: String = "") {
         self.email = email
         self.password = password
@@ -25,7 +26,7 @@ class SignInViewModel:ObservableObject{
         print("User Login successfully. Email: \(email)")
     }
     
-    private func validate() -> Bool{
+     private func validate() -> Bool{
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else{
             errorMessage = "Please fill all field"
