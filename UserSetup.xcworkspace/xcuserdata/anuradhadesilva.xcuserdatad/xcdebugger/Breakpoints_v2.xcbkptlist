@@ -14,8 +14,8 @@
             filePath = "UserSetup/ViewModel/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "logOut()"
             landmarkType = "7">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "UserSetup/ViewModel/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "logOut()"
             landmarkType = "7">
             <Locations>
@@ -110,8 +110,8 @@
             filePath = "UserSetup/ViewModel/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "logOut()"
             landmarkType = "7">
             <Locations>
@@ -158,8 +158,8 @@
             filePath = "UserSetup/Views/MainViews/Profile/ProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -206,8 +206,8 @@
             filePath = "UserSetup/Views/MainViews/Profile/ProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -254,8 +254,8 @@
             filePath = "UserSetup/Views/MainViews/Profile/ProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -270,8 +270,8 @@
             filePath = "UserSetup/ViewModel/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "fetchUser()"
             landmarkType = "7">
             <Locations>
@@ -318,8 +318,8 @@
             filePath = "UserSetup/Views/MainViews/Profile/ProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -334,8 +334,8 @@
             filePath = "UserSetup/ViewModel/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "fetchUser()"
             landmarkType = "7">
             <Locations>
@@ -375,579 +375,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - ce03102e90ab27d4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "1496">
-               </Location>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - 90acaac460b6e4cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - 657d4d7b9a727bd2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - c870817f0f8d51df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - ce03102e90ab2637"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "1496">
-               </Location>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - 90acaac460b6e528"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - 657d4d7b9a727a31"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "859C22EC-54EA-4BBB-8B88-4EE371034AA5 - c870817f0f8d503c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DE27E8EA-9F27-46F9-9B83-21990CE6BCAE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DE27E8EA-9F27-46F9-9B83-21990CE6BCAE - c870817f0f8d5cd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "228">
-               </Location>
-               <Location
-                  uuid = "DE27E8EA-9F27-46F9-9B83-21990CE6BCAE - 1419a821b420fed5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  uuid = "DE27E8EA-9F27-46F9-9B83-21990CE6BCAE - c870817f0f8d5335"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "138"
-                  endingLineNumber = "138"
-                  offsetFromSymbolStart = "228">
-               </Location>
-               <Location
-                  uuid = "DE27E8EA-9F27-46F9-9B83-21990CE6BCAE - 1419a821b420f134"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "138"
-                  endingLineNumber = "138"
-                  offsetFromSymbolStart = "372">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "386B3607-21A1-4C2F-9297-81F3CCF12439"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "386B3607-21A1-4C2F-9297-81F3CCF12439 - c870817f0f8d5cd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "228">
-               </Location>
-               <Location
-                  uuid = "386B3607-21A1-4C2F-9297-81F3CCF12439 - 1419a821b420fed5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  uuid = "386B3607-21A1-4C2F-9297-81F3CCF12439 - c870817f0f8d5cd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "244">
-               </Location>
-               <Location
-                  uuid = "386B3607-21A1-4C2F-9297-81F3CCF12439 - 1419a821b420fed5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "388">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9C5620C6-EEA9-4F01-816E-88FD007CDC4E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9C5620C6-EEA9-4F01-816E-88FD007CDC4E - 657d4d7b9a7278ea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "624">
-               </Location>
-               <Location
-                  uuid = "9C5620C6-EEA9-4F01-816E-88FD007CDC4E - 58d778f9ae9ddbf1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) await resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "9C5620C6-EEA9-4F01-816E-88FD007CDC4E - fdaf7ad48319bce8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "192">
-               </Location>
-               <Location
-                  uuid = "9C5620C6-EEA9-4F01-816E-88FD007CDC4E - 1419a821b420f3ff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
-                  offsetFromSymbolStart = "156">
-               </Location>
-               <Location
-                  uuid = "9C5620C6-EEA9-4F01-816E-88FD007CDC4E - 1419a821b420f0e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "208">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - ce03102e90ab27d4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "1496">
-               </Location>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - 90acaac460b6e4cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - 657d4d7b9a727bd2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - c870817f0f8d51df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - ce03102e90ab2637"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "1496">
-               </Location>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - 90acaac460b6e528"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - 657d4d7b9a727a31"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "F993D51A-54C0-4CC5-8618-EE69E8DA2E93 - c870817f0f8d503c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for UserSetup.AuthenticateViewModel.signInWithGoogle() async -&gt; Swift.Bool"
-                  moduleName = "UserSetup"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anuradhadesilva/Desktop/UserSetup/UserSetup/ViewModel/AuthenticateViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "701F9C55-0B10-420E-8005-42EE6B7D5911"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "64DFE2EB-998A-4D8F-9509-B04CD1BC0C6A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "458FB517-7DB9-42F2-8A99-2178C349D722"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UserSetup/ViewModel/AuthenticateViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "signInWithGoogle()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "01E524A4-C748-45C5-AA12-BAA3D0A19084"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -955,8 +382,8 @@
             filePath = "UserSetup/ViewModel/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "fetchUser()"
             landmarkType = "7">
          </BreakpointContent>

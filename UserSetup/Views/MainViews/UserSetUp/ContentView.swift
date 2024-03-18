@@ -17,7 +17,7 @@ struct ContentView: View {
         VStack{
             MainTopBarView(viewModel:mainViewModel)
                 .fullScreenCover(isPresented: $mainViewModel.showProfileView,content: {
-                    ProfileView(viewmodel: profileViewModel, signInModel: signInModel, signUpModel: signUpModel, mainViewModel: mainViewModel)
+                    ProfileView(viewmodel: profileViewModel, signInModel: signInModel, signUpModel: signUpModel, mainViewModel: mainViewModel, authViewModel: authViewModel)
                 })
                 .fullScreenCover(isPresented: $mainViewModel.showOptionView,content: {
                     UserOption(signInModel: signInModel, signUpViewModel: signUpModel, viewModel: authViewModel)

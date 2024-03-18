@@ -16,13 +16,15 @@ struct ProfileView: View {
     @ObservedObject var signInModel:SignInViewModel
     @ObservedObject var signUpModel:SignUpViewModel
     @ObservedObject var mainViewModel:MainViewModel
+    @ObservedObject var authViewModel:AuthenticateViewModel
+    @State private var onTapProfileImage = false
 //    @ObservedObject var AuthViewModel:AuthenticateViewModel
 //    @StateObject var imageModel = ImageArtViewModel()
     
     //    @State private var MyProjectSelect = true
     //    @State private var PublishedArtSelect = false
     @State private var selectedTab: Tab = .MyProjectSelect
-    
+    @State var image:UIImage?
     @State private var isiconselected = false
     enum Tab {
         case MyProjectSelect, PublishedArtSelect
@@ -34,10 +36,27 @@ struct ProfileView: View {
                 ScrollView{
                     
                     VStack{
-//                        WebImage(url: <#T##URL?#>)
-                        Image("Mask Group 13582")
-                            .resizable()
-                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 100)
+                        HStack{
+                            Spacer()
+                            Text("Edit")
+//                                .onTapGesture {
+//                                    onTapProfileImage =
+//                                }
+                        }
+                        if let profileImageURL = user.profileImageURL{
+                            WebImage(url: user.profileImageURL)
+                            //                        Image("Mask Group 13582")
+                                .resizable()
+                                .frame(width: 75,height: 75)
+                                .cornerRadius(100)
+                                .onTapGesture {
+                                    onTapProfileImage = true
+                                }
+                        } else {
+                            Image("Mask Group 13582")
+                                .resizable()
+                                .frame(width: 75,height: 75)
+                        }
                        
                         Text(user.name)
                             .font(Font.custom(CustomFonts.OpenSansBold, size: 17))
@@ -46,6 +65,15 @@ struct ProfileView: View {
                             viewmodel.logOut()
                             mainViewModel.showProfileView.toggle()
                         }
+                        Button{
+                            viewmodel.profileLoadController(image: image)
+                        }
+                        label:{
+                            Text("Save")
+                        }
+                    }
+                    .fullScreenCover(isPresented: $onTapProfileImage, onDismiss: nil){
+                        ImagePicker(image: $image)
                     }
                     .frame(width: 370, height: 200)
                     .background(Color(red: 20 / 255, green: 20 / 255, blue: 22 / 255))

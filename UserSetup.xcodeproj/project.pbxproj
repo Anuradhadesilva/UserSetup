@@ -25,6 +25,7 @@
 		EB8E99882B7DE90B0092700C /* LiveBrushFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E99872B7DE90B0092700C /* LiveBrushFilterBar.swift */; };
 		EB8E998A2B7DFA800092700C /* ExactCustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E99892B7DFA800092700C /* ExactCustomSlider.swift */; };
 		EB97A79F2BA847C7004E2C62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB97A79E2BA847C7004E2C62 /* GoogleService-Info.plist */; };
+		EB97A7A22BA852A6004E2C62 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97A7A12BA852A6004E2C62 /* ImagePicker.swift */; };
 		EBA372BF2B76358E001261D2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EBA372BE2B76358E001261D2 /* Lottie */; };
 		EBA372C12B763DA3001261D2 /* Load2.json in Resources */ = {isa = PBXBuildFile; fileRef = EBA372C02B763DA3001261D2 /* Load2.json */; };
 		EBAEEF102B74861C003E32CD /* LineExtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEEF0F2B74861C003E32CD /* LineExtractionView.swift */; };
@@ -111,6 +112,7 @@
 		EB8E99872B7DE90B0092700C /* LiveBrushFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBrushFilterBar.swift; sourceTree = "<group>"; };
 		EB8E99892B7DFA800092700C /* ExactCustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExactCustomSlider.swift; sourceTree = "<group>"; };
 		EB97A79E2BA847C7004E2C62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB97A7A12BA852A6004E2C62 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		EBA372C02B763DA3001261D2 /* Load2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Load2.json; sourceTree = "<group>"; };
 		EBAEEF0F2B74861C003E32CD /* LineExtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineExtractionView.swift; sourceTree = "<group>"; };
 		EBAEEF132B7487A0003E32CD /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		EB1AF6502B7F225D00AA8A0B /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
+				EB97A7A02BA85296004E2C62 /* Custom */,
 				EB1AF6592B7F2F5A00AA8A0B /* Profile */,
 				EB1AF6582B7F2F2400AA8A0B /* UserSetUp */,
 				EB1AF6552B7F254400AA8A0B /* MainDesignView */,
@@ -310,6 +313,14 @@
 				EB7FF9992B6BA28F005B4295 /* CustomFonts.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB97A7A02BA85296004E2C62 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EB97A7A12BA852A6004E2C62 /* ImagePicker.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		EBAEEF112B748778003E32CD /* TopBar */ = {
@@ -551,6 +562,7 @@
 				EB1AF6522B7F22F300AA8A0B /* MainView.swift in Sources */,
 				EBBE99EF2B7B6306003AEA34 /* LiveBrushBottomBar.swift in Sources */,
 				EBC7A74C2B7343460047ED89 /* ProjectListView.swift in Sources */,
+				EB97A7A22BA852A6004E2C62 /* ImagePicker.swift in Sources */,
 				EBBFF6522B639E530088DB00 /* SignUpViewModel.swift in Sources */,
 				EB34E1732B8C91470057AAC0 /* RootViewController.swift in Sources */,
 				EBBFF6562B63A6AF0088DB00 /* Extensions.swift in Sources */,

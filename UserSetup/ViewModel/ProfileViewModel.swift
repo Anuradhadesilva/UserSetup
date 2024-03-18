@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseStorage
 
 class ProfileViewModel:ObservableObject{
     init(){
@@ -16,6 +17,7 @@ class ProfileViewModel:ObservableObject{
     }
     @Published var user:User? = nil
     @Published var userId:String?
+    @Published var StatusMessage = ""
     
     func fetchUser(){
         guard let user = Auth.auth().currentUser else{
@@ -43,6 +45,23 @@ class ProfileViewModel:ObservableObject{
         
         
     }
+    func profileLoadController(image :UIImage?){
+        guard let uid = Auth.auth().currentUser?.uid else {
+            return
+        }
+        let profileImageRef = Storage.storage().reference().child("UserProfileImages").child("\(uid)"+".jpg")
+        guard let imageData = image?.jpegData(compressionQuality: 0.5) else { return }
+        
+        profileImageRef.putData(imageData, metadata: nil){ metadata, err in
+            if let err = err {
+                self.StatusMessage = "Failed to push image to Storage: \(err)"
+                print(self.StatusMessage)
+                return
+            }
+            self.fetchUser()
+        }
+    }
+        
     
     func logOut(){
         do{
