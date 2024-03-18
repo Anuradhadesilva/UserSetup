@@ -12,7 +12,7 @@ struct SignInView: View {
     @ObservedObject var signUpViewModel:SignUpViewModel
     @State private var isSecure:Bool = true
     @Environment(\.dismiss) var dismiss
-    @State private var showAlert:Bool = false
+//    @State private var showAlert:Bool = false
     @State private var email:String = ""
     var body: some View {
         NavigationStack{
@@ -103,11 +103,11 @@ struct SignInView: View {
                 Button(action:{
                     viewModel.login()
                     if viewModel.errorMessage.isEmpty{
-                        showAlert = false
-                        dismiss()
+                        viewModel.showAlert = false
+//                        dismiss()
                     }
                     else{
-                        showAlert = true
+                        viewModel.showAlert = true
                     }
                 }){
                     Text("Log In")
@@ -120,9 +120,14 @@ struct SignInView: View {
                 .foregroundColor(.white)
                 .cornerRadius(8)
                 .padding()
-                .alert(isPresented: $showAlert) {
-                    Alert(title: Text("Error"), message: Text(viewModel.errorMessage),
-                          dismissButton: .default(Text("OK")))
+                .alert(isPresented: $viewModel.showAlert) {
+                    if viewModel.invalidLogin {
+                        Alert(title: Text("Invalid email address or password"),
+                              dismissButton: .default(Text("OK")))
+                    } else {
+                        Alert(title: Text("Error"), message: Text(viewModel.errorMessage),
+                              dismissButton: .default(Text("OK")))
+                    }
                 }
                 Spacer()
                 Button{

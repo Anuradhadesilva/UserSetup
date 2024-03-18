@@ -21,11 +21,13 @@ class ProfileViewModel:ObservableObject{
         guard let user = Auth.auth().currentUser else{
             return
         }
+        self.user = User(
+            id: user.uid,
+            name: user.displayName ?? "",
+            email: user.email ?? "",
+            profileImageURL: user.photoURL ?? nil
+        )
         
-        self.user = User(id: user.uid,
-                         name: user.displayName ?? "",
-                         email: user.email ?? "",
-                         profileImageURL: user.photoURL)
 //        let db = Firestore.firestore()
 //        db.collection("users").document(userId).getDocument{[weak self] snapshot, error in
 //            guard let data = snapshot?.data(), error == nil else{

@@ -9,6 +9,8 @@ import SwiftUI
 import Foundation
 
 class MainViewModel:ObservableObject{
+//    static let shared = MainViewModel()
+    
     @Published var showProfileView:Bool = false
     @Published var showOptionView:Bool = false
 }

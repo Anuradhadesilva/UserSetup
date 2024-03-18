@@ -9,7 +9,6 @@ import Foundation
 import FirebaseAuth
 import GoogleSignIn
 import FirebaseCore
-import GoogleSignInSwift
 import AuthenticationServices
 import CryptoKit
 
@@ -31,13 +30,10 @@ class AuthenticateViewModel:NSObject,ObservableObject {
     
     override init(){
         super.init()
-        self.handler = Auth.auth().addStateDidChangeListener {[weak self]_, user in
-            DispatchQueue.main.async
-            {
-                self?.currentUserId = user?.uid ?? ""
-            }
-            
-        }
+        self.handler = Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
+              guard let self = self else { return }
+              self.currentUserId = user?.uid ?? ""
+          }
     }
     public var isSignedIn:Bool{
         return Auth.auth().currentUser != nil

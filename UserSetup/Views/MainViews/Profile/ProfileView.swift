@@ -12,9 +12,10 @@ import UIKit
 
 
 struct ProfileView: View {
-    @ObservedObject var viewmodel:ProfileViewModel
+    @ObservedObject var viewmodel = ProfileViewModel()
     @ObservedObject var signInModel:SignInViewModel
     @ObservedObject var signUpModel:SignUpViewModel
+    @ObservedObject var mainViewModel:MainViewModel
 //    @ObservedObject var AuthViewModel:AuthenticateViewModel
 //    @StateObject var imageModel = ImageArtViewModel()
     
@@ -43,6 +44,7 @@ struct ProfileView: View {
                             .foregroundColor(.white)
                         Button("Sign Out"){
                             viewmodel.logOut()
+                            mainViewModel.showProfileView.toggle()
                         }
                     }
                     .frame(width: 370, height: 200)
