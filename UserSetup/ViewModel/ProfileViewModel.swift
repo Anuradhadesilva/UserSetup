@@ -30,6 +30,25 @@ class ProfileViewModel:ObservableObject{
             profileImageURL: user.photoURL ?? nil
         )
         
+        let profileImageRef = Storage.storage().reference().child("UserProfileImages").child("\(user.uid)"+".jpg")
+        profileImageRef.downloadURL { url, error in
+            if let error = error {
+                print("Error fetching profile image URL: \(error.localizedDescription)")
+                return
+            }
+            
+            if let url = url {
+                let profileImageURL = URL(string: url.absoluteString)
+                let user = User(id: user.uid,
+                                name: user.displayName ?? "",
+                                email: user.email ?? "",
+                                profileImageURL: profileImageURL ?? user.photoURL)
+                self.user = user
+            }
+            
+            
+            
+        }
 //        let db = Firestore.firestore()
 //        db.collection("users").document(userId).getDocument{[weak self] snapshot, error in
 //            guard let data = snapshot?.data(), error == nil else{

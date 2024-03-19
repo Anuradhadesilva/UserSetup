@@ -18,6 +18,7 @@ struct ProfileView: View {
     @ObservedObject var mainViewModel:MainViewModel
     @ObservedObject var authViewModel:AuthenticateViewModel
     @State private var onTapProfileImage = false
+    @State private var onTapEdit = false
 //    @ObservedObject var AuthViewModel:AuthenticateViewModel
 //    @StateObject var imageModel = ImageArtViewModel()
     
@@ -33,52 +34,111 @@ struct ProfileView: View {
     var body: some View {
         NavigationStack{
             if let user = viewmodel.user {
-                ScrollView{
-                    
+                ScrollView(showsIndicators: false){
                     VStack{
                         HStack{
+                            Button{
+                                viewmodel.logOut()
+                                mainViewModel.showProfileView.toggle()
+                            }label:{
+                                Image("Share icon 1")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .padding(.top)
+                                
+                            }
                             Spacer()
-                            Text("Edit")
-//                                .onTapGesture {
-//                                    onTapProfileImage =
-//                                }
+                            Button{
+                                onTapEdit.toggle()
+                            }label: {
+                                Image("draw_icon")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .padding(.top)
+                            }
                         }
-                        if let profileImageURL = user.profileImageURL{
-                            WebImage(url: user.profileImageURL)
-                            //                        Image("Mask Group 13582")
-                                .resizable()
-                                .frame(width: 75,height: 75)
-                                .cornerRadius(100)
-                                .onTapGesture {
-                                    onTapProfileImage = true
-                                }
+                        .padding(.horizontal)
+                        if onTapEdit {
+                            if let profileImageURL = user.profileImageURL{
+                                WebImage(url: profileImageURL)
+                                //                        Image("Mask Group 13582")
+                                    .resizable()
+                                    .frame(width: 75,height: 75)
+                                    .cornerRadius(100)
+                                    .onTapGesture {
+                                        onTapProfileImage = true
+                                    }
+                                    .overlay(
+                                        VStack{
+                                            Image("imagePicker_camera")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                        }
+                                    )
+                                    
+                            } else {
+                                Image("Mask Group 13582")
+                                    .resizable()
+                                    .frame(width: 75,height: 75)
+                                    .overlay(
+                                        VStack{
+                                            Image("imagePicker_camera")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                        }
+                                    )
+                            }
                         } else {
-                            Image("Mask Group 13582")
-                                .resizable()
-                                .frame(width: 75,height: 75)
+                            if let profileImageURL = user.profileImageURL{
+                                WebImage(url: profileImageURL)
+                                //                        Image("Mask Group 13582")
+                                    .resizable()
+                                    .frame(width: 75,height: 75)
+                                    .cornerRadius(100)
+                            } else {
+                                Image("Mask Group 13582")
+                                    .resizable()
+                                    .frame(width: 75,height: 75)
+                            }
                         }
-                       
                         Text(user.name)
                             .font(Font.custom(CustomFonts.OpenSansBold, size: 17))
                             .foregroundColor(.white)
-                        Button("Sign Out"){
-                            viewmodel.logOut()
-                            mainViewModel.showProfileView.toggle()
+                        HStack{
+                            Button{
+                                onTapEdit.toggle()
+                            }label:{
+                                Text("Cancel")
+                                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 40)
+                                    .foregroundStyle(.white)
+                                    .font(Font.custom(CustomFonts.OpenSansMedium, size: 14))
+                                    .background(.gray)
+                                    .cornerRadius(8)
+                            }
+                            Spacer()
+                            Button{
+                                viewmodel.profileLoadController(image: image)
+                                onTapEdit.toggle()
+                            }label:{
+                                Text("Save")
+                                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 40)
+                                    .foregroundStyle(.white)
+                                    .font(Font.custom(CustomFonts.OpenSansMedium, size: 14))
+                                    .background(.blue)
+                                    .cornerRadius(8)
+                            }
+                            
                         }
-                        Button{
-                            viewmodel.profileLoadController(image: image)
-                        }
-                        label:{
-                            Text("Save")
-                        }
+                        .padding(.horizontal)
+                        .opacity(onTapEdit ? 1.0 : 0)
                     }
                     .fullScreenCover(isPresented: $onTapProfileImage, onDismiss: nil){
                         ImagePicker(image: $image)
                     }
-                    .frame(width: 370, height: 200)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 200, maxHeight: 200)
                     .background(Color(red: 20 / 255, green: 20 / 255, blue: 22 / 255))
                     .cornerRadius(8.0)
-                    .padding(.top,-40)
+//                    .padding(.top,-40)
                     HStack{
                         VStack{
                             HStack{
@@ -186,10 +246,10 @@ struct ProfileView: View {
                         Spacer()
                         
                     }
-                    .frame(width: 370, height: 200)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 200, maxHeight: 240)
                     .background(Color(red: 20 / 255, green: 20 / 255, blue: 22 / 255))
                     .cornerRadius(8.0)
-                    .padding(.top,-40)
+//                    .padding(.top,-40)
                     VStack{
                         HStack{
                             VStack{
