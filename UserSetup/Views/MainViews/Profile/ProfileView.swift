@@ -247,9 +247,10 @@ struct ProfileView: View {
                         Spacer()
                         
                     }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 200, maxHeight: 240)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 200, maxHeight: 200)
                     .background(Color(red: 20 / 255, green: 20 / 255, blue: 22 / 255))
                     .cornerRadius(8.0)
+                    .padding(.horizontal,20)
 //                    .padding(.top,-40)
                     VStack{
                         HStack{
@@ -335,6 +336,7 @@ struct ProfileView: View {
                             }
                             
                             .frame(width:400,height:450)
+//                            .navigationBarBackButtonHidden()
                         }
                     }
                     

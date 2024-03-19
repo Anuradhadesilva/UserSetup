@@ -10,6 +10,7 @@ import SwiftUI
 struct SignUpView: View {
     @ObservedObject var viewModel:SignUpViewModel
     @State private var isSecure:Bool = true
+    @State private var isRegistering:Bool = false
     @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationStack{
@@ -73,9 +74,20 @@ struct SignUpView: View {
                 
                 Button(action: {
                     viewModel.Register()
+                    if !viewModel.errorMessage.isEmpty {
+                        viewModel.showAlert = true
+                        isRegistering = true
+                    } else {
+                        isRegistering = true
+                    }
                 }){
-                    Text("Get Started, It's free! ")
-                        .font(.title3.bold())
+                    if isRegistering {
+                        Text("Registering....")
+                            .font(.title3.bold())
+                    } else {
+                        Text("Get Started, It's free! ")
+                            .font(.title3.bold())
+                    }
                 }.frame(width: 350, height: 60)
                     .background(Color(red: 166 / 255, green: 69 / 255, blue: 255 / 255))
                     .foregroundColor(.white)

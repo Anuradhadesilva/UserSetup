@@ -45,6 +45,7 @@ struct PublishedList: View {
                     )
             }
         }
+        .padding(.horizontal,20)
     }
 }
 

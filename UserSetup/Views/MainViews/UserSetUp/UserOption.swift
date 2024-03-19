@@ -142,7 +142,7 @@ struct UserOption: View {
                     
                 }
                 .ignoresSafeArea()
-                
+                .navigationBarBackButtonHidden()
             }
             .navigationBarItems(leading: CustomBackButton(imageIcon: "Back Button"))
 

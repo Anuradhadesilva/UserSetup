@@ -132,6 +132,7 @@
 		EBBFF64F2B639E380088DB00 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		EBBFF6512B639E530088DB00 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EBBFF6552B63A6AF0088DB00 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EBC001912BA969090011B42D /* UserSetup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UserSetup.entitlements; sourceTree = "<group>"; };
 		EBC7A74B2B7343460047ED89 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		EBC7A74D2B7344750047ED89 /* PublishedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +269,7 @@
 		EB89D8922B5F6C12005FF114 /* UserSetup */ = {
 			isa = PBXGroup;
 			children = (
+				EBC001912BA969090011B42D /* UserSetup.entitlements */,
 				EB34E1712B8C5D720057AAC0 /* Info.plist */,
 				EB89D8932B5F6C12005FF114 /* UserSetupApp.swift */,
 				EB1AF64F2B7F21D300AA8A0B /* Resourses */,
@@ -711,6 +713,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UserSetup/UserSetup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UserSetup/Preview Content\"";
@@ -743,6 +746,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UserSetup/UserSetup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UserSetup/Preview Content\"";

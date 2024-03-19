@@ -48,7 +48,10 @@ struct ProjectListView: View {
                     )
             }
         }
+        .padding(.horizontal,20)
     }
+
+    
 }
 
 #Preview {

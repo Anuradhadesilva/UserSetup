@@ -13,7 +13,10 @@ class SignUpViewModel: ObservableObject{
     @Published var name = ""
     @Published var email = ""
     @Published var password = ""
+    @Published var errorMessage = ""
     @Published var showAlert = false
+    @Published var isUserSignedUp = false
+    @Published var isUserExisting = false
     
     init(){
         
@@ -32,8 +35,9 @@ class SignUpViewModel: ObservableObject{
             }
             if let error = error {
                 self?.showAlert = true
+                self?.isUserExisting = true
             }
-            
+            self?.isUserSignedUp = true
             self?.insertUserRecord(id: userId)
         }
     }
@@ -56,14 +60,17 @@ class SignUpViewModel: ObservableObject{
               !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else{
             showAlert = true
+            errorMessage = "Please fill all field"
             return false
         }
         guard email.contains("@") && email.contains(".") else{
             showAlert = true
+            errorMessage = "Please enter valid email"
             return false
         }
         guard password.count >= 6 else{
             showAlert = true
+            errorMessage = "password must be atleast 5 characters"
             return false
         }
         return true
