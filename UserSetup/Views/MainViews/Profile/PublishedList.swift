@@ -17,7 +17,9 @@ struct PublishedList: View {
                 let imageData = imageModel.ImageArray2[index]
                 Image(imageData.imageName)
                     .resizable()
-                    .frame(width: 180)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                    .clipped()
                     .overlay(
                         Group {
                             if onClickImage == index {

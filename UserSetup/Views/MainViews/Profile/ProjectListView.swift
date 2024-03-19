@@ -16,7 +16,9 @@ struct ProjectListView: View {
                 let imageData = imageModel.ImageArray[index]
                 Image(imageData.imageName)
                     .resizable()
-                    .frame(width: 180,height: 180)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                    .clipped()
                     .onTapGesture {
                         onClickImage = index
                     }

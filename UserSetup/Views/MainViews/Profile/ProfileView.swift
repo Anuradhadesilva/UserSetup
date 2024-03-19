@@ -138,6 +138,7 @@ struct ProfileView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 200, maxHeight: 200)
                     .background(Color(red: 20 / 255, green: 20 / 255, blue: 22 / 255))
                     .cornerRadius(8.0)
+                    .padding(.horizontal,20)
 //                    .padding(.top,-40)
                     HStack{
                         VStack{
@@ -232,7 +233,7 @@ struct ProfileView: View {
                         }) {
                             HStack {
                                 NavigationLink(
-                                    destination: SignInView(viewModel: signInModel, signUpViewModel: signUpModel)){
+                                    destination: UserOption(signInModel: signInModel, signUpViewModel: signUpModel, viewModel: authViewModel)){
                                         Text("Sign In")
                                             .font(Font.custom(CustomFonts.OpenSansBold, size: 17))
                                             .foregroundColor(Color.white)
